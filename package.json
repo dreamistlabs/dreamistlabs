@@ -1,0 +1,33 @@
+{
+  "name": "dreamistlabs",
+  "version": "0.0.1",
+  "description": "The digital home of Dreamist Labs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamistlabs/dreamistlabs.git"
+  },
+  "author": "Johnny Hu <johnny@dreamistlabs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dreamistlabs/dreamistlabs/issues"
+  },
+  "homepage": "https://github.com/dreamistlabs/dreamistlabs#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^8.1.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {}
+}
