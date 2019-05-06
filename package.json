@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "export": "next export",
+    "export": "next build && next export -o docs && cp .nojekyll CNAME docs/",
     "dev": "next",
     "build": "next build",
     "start": "next start",
