@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "export": "next build && next export -o docs && cp .nojekyll CNAME docs/",
+    "cp:files": "cp config/.nojekyll config/CNAME docs/",
+    "export": "next build && next export -o docs && npm run cp:files",
     "dev": "next",
     "build": "next build",
     "start": "next start",
