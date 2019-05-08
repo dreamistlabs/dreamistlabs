@@ -5,18 +5,18 @@ const PageContainer = props => {
   return (
     <React.Fragment>
       <Head>
-        <meta charset="utf-8" key="utf-8" />
+        <meta charSet="utf-8" key="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
           key="viewport"
         />
         <meta
-          http-equiv="X-UA-Compatible"
+          httpEquiv="X-UA-Compatible"
           content="ie=edge"
           key="X-UA-Compatible"
         />
-        <title>{props.title}</title>
+        <title>{props.title} | Dreamist Labs</title>
       </Head>
       {props.children}
     </React.Fragment>
