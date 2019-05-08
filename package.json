@@ -11,6 +11,9 @@
     "export": "next build && next export -o docs && npm run cp:files",
     "dev": "next",
     "build": "next build",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,5 +34,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "generate-changelog": "^1.7.1"
+  }
 }
