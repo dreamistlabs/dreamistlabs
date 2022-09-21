@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/react-hooks": "^8.0.1",
@@ -18,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "build": "NODE_ENV=production BUILD_PATH='./docs' react-scripts build",
     "changelog": "auto-changelog -p --handlebars-setup handlebars.js --template changelog-template.hbs",
     "changelog:debug": "auto-changelog -p --template json --output changelog-preview.json",
     "changelog:persist": "npm run changelog && git add CHANGELOG.md && cross-env HUSKY=0 git commit -m \"Chore: Updated CHANGELOG.md for release\"",
